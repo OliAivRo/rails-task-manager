@@ -16,5 +16,6 @@ Rails.application.routes.draw do
   # As a user, I can remove a task
 
   # resources :tasks
-  get "/", to: "tasks#index"
+  get "/", to: "tasks#index", as: :tasks
+  get "/task/:id", to: "tasks#show", as: :task
 end
