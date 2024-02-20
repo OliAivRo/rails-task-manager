@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
 
   # Delete
-  # delete "tasks/:id", to: "tasks#destroy"
+  delete "tasks/:id", to: "tasks#destroy"
 
 
 
