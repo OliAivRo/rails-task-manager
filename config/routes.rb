@@ -18,4 +18,6 @@ Rails.application.routes.draw do
   # resources :tasks
   get "/", to: "tasks#index", as: :tasks
   get "/task/:id", to: "tasks#show", as: :task
+  get "/new", to: "tasks#new"
+  post "/", to: "tasks#create"
 end
